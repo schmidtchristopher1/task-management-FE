@@ -1,13 +1,14 @@
 import { useState, useEffect } from "react";
 import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
-import HomePage from "./pages/HomePage";
-import EmployeesPage from "./pages/EmployeesPage";
-import TasksPage from "./pages/TasksPage";
-import EmployeeDetailPage from "./pages/EmployeeDetailPage";
-import TaskDetailPage from "./pages/TaskDetailPage";
+import HomePage from "./pages/HomePage.tsx";
+import EmployeesPage from "./pages/EmployeesPage.tsx";
+import TasksPage from "./pages/TasksPage.tsx";
+import EmployeeDetailPage from "./pages/EmployeeDetailPage.tsx";
+import TaskDetailPage from "./pages/TaskDetailPage.tsx";
 import "./styles/layout.css";
 import "./styles/components.css";
 import "./styles/responsive.css";
+import React from "react";
 
 function App() {
 	return <AppContent />;

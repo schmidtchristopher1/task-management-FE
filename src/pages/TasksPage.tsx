@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import api from "../services/api";
-import { Task } from "../types/models";
+import api from "../services/api.ts";
+import { Task } from "../types/models.ts";
 
 const TasksPage: React.FC = () => {
 	const [tasks, setTasks] = useState<Task[]>([]);

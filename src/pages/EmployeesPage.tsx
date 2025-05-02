@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom'; // Import Link
-import api from '../services/api';
-import { Employee, Department } from '../types/models';
+import api from '../services/api.ts';
+import { Employee, Department } from '../types/models.ts';
 
 const EmployeesPage: React.FC = () => {
   const [employees, setEmployees] = useState<Employee[]>([]);

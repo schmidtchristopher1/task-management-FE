@@ -7,8 +7,8 @@ import {
 	createAssignment,
 	updateAssignmentStatus,
 	deleteAssignment,
-} from "../services/api";
-import { Task, Assignment, Employee, AssignmentStatus } from "../types/models";
+} from "../services/api.ts";
+import { Task, Assignment, Employee, AssignmentStatus } from "../types/models.ts";
 
 function TaskDetailPage() {
 	const { id } = useParams<{ id: string }>();
