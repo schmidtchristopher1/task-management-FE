@@ -8,7 +8,6 @@ import TaskDetailPage from "./pages/TaskDetailPage.tsx";
 import "./styles/layout.css";
 import "./styles/components.css";
 import "./styles/responsive.css";
-import React from "react";
 
 function App() {
 	return <AppContent />;

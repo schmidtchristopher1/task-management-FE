@@ -1,12 +1,10 @@
 @media (max-width: 768px) {
 	nav {
-		padding: 0 1rem;
-		height: auto;
+        height: auto;
 		flex-direction: column;
 		align-items: flex-start;
-		padding-top: 0.5rem;
-		padding-bottom: 0.5rem;
-		position: static;
+        padding: 0.5rem 1rem;
+        position: static;
 	}
 	nav ul {
 		gap: 1rem;
