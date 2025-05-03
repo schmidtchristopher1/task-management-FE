@@ -1,7 +1,7 @@
 import axios from 'axios';
 import { Assignment, AssignmentStatus, Employee, Task } from '../types/models';
 
-const API_BASE_URL = process.env.REACT_APP_API_BASE_URL || 'http://localhost:8080';
+const API_BASE_URL = 'http://localhost:8080';
 
 const api = axios.create({
   baseURL: API_BASE_URL,
@@ -113,6 +113,16 @@ export const updateAssignmentStatus = async (id: number, statusUpdateData: Updat
 
 export const deleteAssignment = async (id: number): Promise<void> => {
   await api.delete(`/assignments/delete/${id}`);
+};
+
+export const getDepartments = async (): Promise<{ id: number; name: string }[]> => {
+  const response = await api.get('/departments');
+  return response.data;
+};
+
+export const createDepartment = async (departmentData: { name: string }): Promise<{ id: number; name: string }> => {
+  const response = await api.post('/departments/create', departmentData);
+  return response.data;
 };
 
 export default api;

@@ -5,9 +5,11 @@ import EmployeesPage from "./pages/EmployeesPage.tsx";
 import TasksPage from "./pages/TasksPage.tsx";
 import EmployeeDetailPage from "./pages/EmployeeDetailPage.tsx";
 import TaskDetailPage from "./pages/TaskDetailPage.tsx";
+import DepartmentsPage from "./pages/DepartmentsPage.tsx";
 import "./styles/layout.css";
 import "./styles/components.css";
 import "./styles/responsive.css";
+import React from "react";
 
 function App() {
 	return <AppContent />;
@@ -47,6 +49,9 @@ function AppContent() {
 						<li>
 							<Link to='/tasks'>Tasks</Link>
 						</li>
+						<li>
+							<Link to='/departments'>Departments</Link>
+						</li>
 					</ul>
 					<button onClick={toggleTheme}>Toggle Theme ({theme})</button>
 				</nav>
@@ -58,6 +63,7 @@ function AppContent() {
 						<Route path='/employees/:id' element={<EmployeeDetailPage />} />
 						<Route path='/tasks' element={<TasksPage />} />
 						<Route path='/tasks/:id' element={<TaskDetailPage />} />
+						<Route path='/departments' element={<DepartmentsPage />} />
 					</Routes>
 				</main>
 			</div>
